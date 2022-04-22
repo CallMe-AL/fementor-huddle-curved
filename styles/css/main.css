@@ -203,6 +203,7 @@ header .header-container .try-it-btn:hover {
 }
 .grow-together .content-wrap .grow-info h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 .grow-together .content-wrap .grow-info p {
   text-align: center;
@@ -421,6 +422,10 @@ header .header-container .try-it-btn:hover {
 }
 .footer .footer-wrap .footer-info .contact-info .phone {
   margin-bottom: 20px;
+}
+.footer .footer-wrap .footer-info .contact-info .phone .phone-number {
+  text-decoration: none;
+  color: white;
 }
 .footer .footer-wrap .footer-info .contact-info .email {
   margin-bottom: 50px;

@@ -101,6 +101,11 @@
         }
         .phone {
           margin-bottom: 20px;
+
+          .phone-number {
+            text-decoration: none;
+            color: white;
+          }
         }
   
         .email {
