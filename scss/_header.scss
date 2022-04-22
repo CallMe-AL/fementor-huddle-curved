@@ -1,0 +1,32 @@
+@use "_config.scss";
+
+header {
+  padding: 30px 15px 20px 15px;
+  margin-bottom: 75px;
+  justify-content: center;
+
+  .header-container {
+    max-width: 1400px;
+    justify-content: space-between;
+    width: 100%;
+
+    .logo {
+      width: 120px;
+      height: 20px;
+    }
+  
+    .try-it-btn {
+      padding: 8px 30px;
+      background-color: transparent;
+      border: 1px solid config.$pink;
+      border-radius: config.$border-radius;
+      color: config.$pink;
+      box-shadow: 0 0 3px config.$light-pink;
+      transition: opacity 0.3s ease-out;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

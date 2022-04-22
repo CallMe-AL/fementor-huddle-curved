@@ -1,0 +1,159 @@
+@use "_config.scss";
+
+.footer {
+  background-color: config.$very-dark-cyan;
+  color: white;
+  margin-top: 100px;
+  position: relative;
+  padding: config.$padding-mobile;
+  padding-top: 40px;
+  &::before {
+    @include config.before-styles;
+    background-image: url(../../images/bg-footer-top-mobile.svg);
+    height: 53px;
+    transform: translateY(-100%);
+    background-size: 100% 53px;
+  
+    @media screen and (min-width: 750px) {
+      background-image: url(../../images/bg-footer-top-desktop.svg);
+      height: 158px;
+      background-size: 100% 158px;
+    }
+  }
+
+  .footer-wrap {
+    max-width: config.$max-width;
+    .newsletter {
+      max-width: 600px;
+      margin: 0 auto 100px auto;
+
+      .newsletter-text-wrap {
+        max-width: 350px;
+        h2 {
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+      
+        p {
+          line-height: 1.5;
+          margin-bottom: 20px;
+        }
+      }
+    
+  
+      .email-form {
+        .input-wrap {
+          .email-input {
+            width: 100%;
+            background-color: white;
+            height: 50px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 0 5px;
+            border: transparent;
+    
+            font-size: 1.2rem;
+    
+            &:valid {
+              border: transparent;
+            }
+    
+            &:invalid {
+              border: 2px solid red;
+            }
+          }
+        }
+
+        .subscribe-btn {
+          background-color: config.$pink;
+          border: transparent;
+          border-radius: 8px;
+          color: white;
+          padding: 10px 30px;
+          margin-left: auto;
+          display: block;
+          transition: background-color 0.3s ease-in;
+      
+          &:hover {
+            background-color: config.$light-pink;
+          }
+        }
+      }
+    
+    }
+  
+    .footer-info {
+      max-width: 350px;
+      margin: 0 auto 100px auto;
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+  
+      .footer-ipsum {
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+  
+      .contact-info {
+        margin-bottom: 50px;
+        img {
+          margin-right: 20px;
+        }
+        .phone {
+          margin-bottom: 20px;
+        }
+  
+        .email {
+          margin-bottom: 50px;
+        }
+      }
+  
+      .social-icons {
+        list-style-type: none;
+  
+        .icon {
+          margin-right: 20px;
+          font-size: 1.6rem;
+  
+          .icon-link {
+            color: white;
+            transition: color 0.3s ease-in;
+  
+            &:hover.facebook {
+              color: #3b5998;
+            }
+  
+            &:hover.instagram {
+              color: #8a3ab9;
+            }
+  
+            &:hover.twitter {
+              color: #00acee;
+            }
+          }
+        }
+      }    
+    }
+  }
+
+  .attribution {
+    padding-bottom: 20px;
+  
+    p {
+      font-size: 0.9rem;
+      text-align: center;
+  
+      a {
+        text-decoration: none;
+        color: config.$pink;
+  
+        transition: color 0.3s ease-in;
+  
+        &:hover {
+          color: config.$light-pink;
+        }
+      }
+    }
+  }
+
+}

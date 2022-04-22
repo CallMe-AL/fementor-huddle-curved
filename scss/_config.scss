@@ -1,0 +1,51 @@
+// primary colors
+$pink: hsl(322, 100%, 66%);
+$light-pink: hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+
+// neutral
+$very-dark-cyan: hsl(192, 100%, 9%);
+$very-pale-blue: hsl(207, 100%, 98%);
+
+$padding-mobile: 0px 15px;
+$border-radius: 25px;
+$faint-para: rgb(95, 95, 95);
+$max-width: 1200px;
+
+@mixin get-started-btn {
+  border-color: transparent;
+  border-radius: 50px;
+  font-weight: 400;
+  background-color: $pink;
+  color: white;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px 35px;
+  transition: background-color 0.3s ease-in;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: $light-pink;
+  }
+}
+
+@mixin after-styles {
+  content: '';
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin before-styles {
+  content: '';
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

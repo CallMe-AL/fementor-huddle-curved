@@ -1,0 +1,16 @@
+@use "_config.scss";
+
+.ready-to-build {
+  padding: 100px 15px 100px 15px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .get-started-btn {
+    @include config.get-started-btn;
+    margin: 0 auto;
+    display: block;
+  }
+}

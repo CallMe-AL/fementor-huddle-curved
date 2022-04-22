@@ -1,0 +1,26 @@
+@use "_config.scss";
+
+.landing-section {
+  padding: config.$padding-mobile;
+  text-align: center;
+  margin-bottom: 75px;
+
+  h1 {
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  .main-content {
+    margin-bottom: 35px;
+    line-height: 1.5;
+    color: config.$faint-para;
+    max-width: 450px;
+    margin: 0 auto 35px auto;
+  }
+
+  .get-started-btn {
+    @include config.get-started-btn;
+  }
+
+}

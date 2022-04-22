@@ -1,0 +1,44 @@
+@use "_config.scss";
+
+.grow-together {
+  position: relative;
+  background-color: config.$very-pale-blue;
+  margin-bottom: 50px;
+  &::after {
+    @include config.after-styles;
+    background-image: url(../../images/bg-section-bottom-mobile-1.svg);
+    height: 52px;
+    transform: translateY(100%);
+    background-size: 100% 52px;
+
+    @media screen and (min-width: 750px) {
+      background-image: url(../../images/bg-section-bottom-desktop-1.svg);
+      height: 165px;
+      background-size: 100% 165px;
+    }
+  }
+  .content-wrap {
+    padding-top: 70px;
+    max-width: config.$max-width;
+    .grow-img {
+      width: 100%;
+      height: 100%;
+      max-width: 525px;
+      display: block;
+      margin: 0 auto 60px auto;      
+    }
+
+    .grow-info {
+      h2 {
+        text-align: center;
+      }
+  
+      p {
+        text-align: center;
+        line-height: 1.5;
+        padding-bottom: 60px;
+      }
+    }
+
+  }
+}

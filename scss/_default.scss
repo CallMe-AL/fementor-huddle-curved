@@ -1,0 +1,43 @@
+@use "_config.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open-sans', sans-serif;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: config.$very-dark-cyan;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  font-family: 'Poppins',
+  sans-serif;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.content-wrap {
+  padding: 0 15px;
+}
+
+.article-wrap {
+  width: min-content;
+  margin: 0 auto;
+}

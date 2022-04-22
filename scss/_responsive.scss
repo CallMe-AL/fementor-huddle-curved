@@ -1,0 +1,383 @@
+@use "_config.scss";
+
+@media screen and (min-width: 750px) {
+  // header
+  header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 200px;
+    .header-container {
+  
+      .logo {
+        width: 240px;
+        height: 39px;
+      }
+    }
+  }
+
+  // landing
+  .landing-section {
+    margin-bottom: 150px;
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .main-content {
+      max-width: 450px;
+      margin: 0 auto 35px auto;
+    }
+  
+    .get-started-btn {
+      padding: 10px 50px;
+    }
+  
+  }
+
+  // huddle info
+  .huddle-info {
+  
+    .content-wrap {
+      .screen-mockups {
+        margin-bottom: 120px;
+      }
+
+      .huddle-data {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        
+        .communities-formed {
+          padding-left: 50px;
+          margin-bottom: 0px;
+    
+          .article-wrap {
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+    
+        .messages-sent {
+          padding-right: 50px;
+          .article-wrap {
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+
+      }
+  
+    }
+  
+    .bg-section-bottom-1 {
+      height: 50px;
+    }
+
+    .bold-display {
+      font-size: 5rem;
+    }
+  }
+
+  // grow together
+  .grow-together {
+  
+    .content-wrap {
+      padding-top: 70px;
+      display: grid;
+      grid-template-areas: 'info img';
+      margin: 0 auto;
+        
+      .grow-img {
+        grid-area: img;
+      }
+  
+      .grow-info {
+        grid-area: info;
+        align-self: center;
+        margin-right: 50px;
+        max-width: 480px;
+        h2 {
+          text-align: left;
+          margin-bottom: 25px;
+          font-size: 2.5rem;
+        }
+  
+        p {
+          text-align: left;
+        }
+      }
+  
+    }
+  }
+
+  // flowing
+  .flowing-conversations {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  
+    .content-wrap {
+      display: grid;
+      grid-template-areas: 'img info';
+      margin: 0 auto;
+  
+      .flowing-img {
+        grid-area: img;
+      }
+  
+      .flow-info {
+        grid-area: info;
+        align-self: center;
+        margin-left: 50px;
+        max-width: 500px;
+        h2 {
+          text-align: right;
+          margin-bottom: 25px;
+          font-size: 2.5rem;
+        }
+  
+        p {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  // users
+  .your-users {
+  
+    .content-wrap {
+      display: grid;
+      grid-template-areas: 'info img';
+      margin: 0 auto;
+  
+      .users-img {
+        grid-area: img;
+      }
+  
+      .users-info {
+        grid-area: info;
+        align-self: center;
+        margin-right: 50px;
+        max-width: 500px;
+  
+        h2 {
+          text-align: left;
+          margin-bottom: 25px;
+          font-size: 2.5rem;
+        }
+  
+        p {
+          text-align: left;
+        }
+      }
+  
+    }
+  
+  }
+
+  // ready to build
+  .ready-to-build {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    .get-started-btn {
+      padding: 20px 75px;
+      font-size: 1.2rem;
+    }
+  }
+
+  // footer
+  .footer {
+    padding-top: 100px;
+    .footer-wrap {
+      display: grid;
+      grid-template-areas: 'info newsletter';
+      gap: 50px;
+      margin: 0 auto 100px auto;
+      .newsletter {
+        grid-area: newsletter;
+        margin: 0px;
+        padding-left: 150px;
+        .newsletter-text-wrap {
+          margin-bottom: 30px;
+          h2 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+    
+          p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+          }
+        }
+      }
+  
+      .footer-info {
+        grid-area: info;
+        align-self: start;
+        justify-self: start;
+        margin: 0px;
+        .footer-logo {
+          margin-bottom: 20px;
+        }
+  
+        .footer-ipsum {
+          line-height: 1.5;
+          margin-bottom: 30px;
+        }
+  
+        .contact-info {
+          margin-bottom: 50px;
+  
+          img {
+            margin-right: 20px;
+          }
+  
+          .phone {
+            margin-bottom: 20px;
+          }
+  
+          .email {
+            margin-bottom: 50px;
+          }
+        }
+
+        .social-icons {
+        
+          .icon {
+            font-size: 2rem;
+          }
+        }
+  
+        
+      }
+    }  
+  }
+}
+@media screen and (min-width: 1035px) {
+
+  // header
+  header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 150px;
+  }
+
+  // landing
+  .landing-section {
+    margin-bottom: 100px;
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .main-content {
+      font-size: 1.4rem;
+      margin-bottom: 50px;
+      max-width: 650px;
+      margin: 0 auto 35px auto;
+    }
+  
+    .get-started-btn {
+      font-size: 1.2rem;
+      padding: 15px 65px;
+    }
+  
+  }
+
+  // huddle info
+  .huddle-info {
+  
+    .content-wrap {
+  
+      .huddle-data {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 150px;
+  
+        .communities-formed {
+          padding-left: 50px;
+          margin-bottom: 0px;
+  
+          .article-wrap {
+            img {
+              width: 48px;
+              height: 40px;
+            }
+            .communities-bottom-p {
+              font-size: 1.5rem;
+            }
+
+          }
+        }
+  
+        .messages-sent {
+          padding-right: 50px;
+  
+          .article-wrap {
+            img {
+              width: 48px;
+              height: 40px;
+            }
+
+            .messages-bottom-p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+  
+      }
+  
+    }
+  
+    .bold-display {
+      font-size: 6rem;
+    }
+  }
+
+  // footer
+  .footer {
+  
+    .footer-wrap {
+  
+      .newsletter {  
+  
+        .email-form {
+          display: flex;
+          align-items: center;
+  
+          .input-wrap {
+            flex: 1;
+            margin-right: 25px;
+  
+            .email-input {
+              margin-bottom: 0px;
+              font-size: 1.2rem;
+            }
+          }
+  
+          .subscribe-btn {
+            padding-left: 40px;
+            padding-right: 40px;
+  
+            &:hover {
+              background-color: config.$light-pink;
+            }
+          }
+        }
+      }
+
+    }
+  
+  }
+}
