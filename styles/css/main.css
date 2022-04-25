@@ -468,8 +468,7 @@ header .header-container .try-it-btn:hover {
 
 @media screen and (min-width: 750px) {
   header {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 25px 50px 25px;
     margin-bottom: 200px;
   }
   header .header-container .logo {
